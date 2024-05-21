@@ -54,7 +54,8 @@ class Game {
         this.gameIsOver = true;
         this.gameScreen.style.display = "none";
         this.gameEndScreen.style.display = "block";
-        
+        document.getElementById ('stats').style.display = 'none';
+        document.getElementById('collected-balls').textContent = this.score;
     }
 
 
@@ -101,8 +102,8 @@ class Player {
         this.gameScreen = gameScreen;
         this.left = left;
         this.top = top;
-        this.width = '10vh';
-        this.height = '10vh';
+        this.width = 25;
+        this.height = 25;
         this.directionX = 0;
         this.directionY = 0;
         this.element = document.createElement("img");
@@ -123,8 +124,8 @@ class Player {
             this.left = 10;
         }
 
-        if (this.left > window.innerWidth - this.width -50) {
-            this.left = window.innerWidth - this.width -50; // not working
+        if (this.left > window.innerWidth - this.width -250) {
+            this.left = window.innerWidth - this.width -250; // not working
         }
 
         this.updatePosition();

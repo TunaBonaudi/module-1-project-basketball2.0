@@ -30,7 +30,6 @@ window.onload = function () {
         game = new Game();
         document.getElementById ('stats').style.display = 'block';
         game.start();
-        
     }
 
     function restartGame() {
