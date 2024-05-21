@@ -14,35 +14,35 @@
     <main>
         <div id="game-intro">
             <h1>BASKETBALL 2.0</h1>
-            <img src="" alt="" srcset="">
+            <img src="./images/background-game.jpg" alt="game-intro-bkgrd" id="game-intro-bkgrd">
             <button id="start-game">START</button>
-            <h2>INSTRUCTIONS</h2>
-            <p id="instructions-p">THE OBJECTIVE IS TO COLLECT AS MANY BALLS AS YOU CAN AND TAKE THEM TO THE NET FOR
-                SCORING.
-                BE CAREFUL WITH OTHER BASKETBALL PLAYERS THAT ARE TRYING TO STEAL YOUR BALLS AND TAKE YOUR LIVES!</p>
-            <h2>CONTROLS</h2>
-            <p id="controls-p">USE THE ARROWS TO MOVE LEFT OR RITGHT</p>
-            <img src="" alt="" srcset="">
+            <div id="rules">
+                <article id="instructions">
+                    <h2>INSTRUCTIONS</h2>
+                    <p class="rules-box">THE OBJECTIVE IS TO COLLECT AS MANY BALLS AS YOU CAN AND TAKE THEM TO THE NET
+                        FOR
+                        SCORING. <br />
+                        <br />
+                        BE CAREFUL WHEN LOSING BASKETBALL AS THEY WILL TAKE YOUR  LIVES!
+                    </p>
+                </article>
+                <article id="controls">
+                    <h2>CONTROLS</h2>
+                    <p class="rules-box">USE THE ARROWS TO MOVE LEFT OR RITGHT</p>
+                    <img src="./images/arrows.png" alt="arrow-img" id="arrow-img" height="100px">
+                </article>
+            </div>
 
-            <article id="ball-intro">
+            <article id="catch-intro">
                 <h3>CATCH THEM</h3>
-                <img src="" alt="" srcset="">
+                <img src="./images/ball.png" alt="ball-intro" id="ball-intro" width="70px" height="70px">
             </article>
 
-            <article id="net-intro">
-                <h3>SCORE</h3>
-                <img src="" alt="" srcset="">
-            </article>
-
-            <article id="monster-intro">
-                <h3>AVOID</h3>
-                <img src="" alt="" srcset="">
-            </article>
         </div>
 
         <div id="game-container">
-            <div>
-                <img src="" alt="" srcset=""> // where do I put it?
+            <div id="stats">
+                <img src="" alt="" srcset="">
                 <h4>Stats</h4>
                 <p>Score: <span id="score">0</span></p>
                 <p>Lives: <span id="lives">3</span></p>
@@ -52,7 +52,7 @@
         </div>
 
         <div id="game-end">
-            <img src="" alt="" srcset="">
+            <img src="./images/background-game.jpg" alt="game-end-bkgrd" id="game-end-bkgrd">
             <h5>GAME OVER</h5>
             <button id="restart-button">RESTART</button>
 
@@ -75,6 +75,10 @@
             </article>
         </div>
     </main>
+
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 
 </html>

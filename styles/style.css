@@ -1,0 +1,109 @@
+#game-intro-bkgrd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: '100vw';
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#rules {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+#instructions,
+#controls {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+    text-align: center;
+}
+
+.rules-box {
+    font-size: small;
+}
+
+#start-game {
+    position: absolute;
+    margin-top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 200px;
+    height: 50px;
+}
+
+#catch-intro {
+    color: white;
+    position: relative;
+    border: 5px solid rgb(0, 0, 0);
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#game-screen {
+    display: none;
+    align-content: center;
+    padding: 20px 0px;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../images/background-game.jpg);
+    background-size: cover;
+  }
+
+#stats{
+    display: none;
+    color: white;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-left: 20px;
+    position: absolute;
+    z-index: 8;
+}
+
+
+  #game-end {
+    display: none;
+  }
+
+  #game-end-bkgrd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+h5 {
+        position: relative;
+        text-align: center;
+        color: white;
+        font-size: 80px;
+}
+
+#restart-button {
+    position: absolute;
+    margin-top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 200px;
+    height: 50px;
+}
