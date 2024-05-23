@@ -125,7 +125,7 @@ class Player {
         }
 
         if (this.left > window.innerWidth - this.width -250) {
-            this.left = window.innerWidth - this.width -250; // not working
+            this.left = window.innerWidth - this.width -250; 
         }
 
         this.updatePosition();
@@ -136,8 +136,8 @@ class Player {
     }
 
     didCollide(obstacle) { 
-        const playerRect = this.element.getBoundingClientRect(); // --> {x, y, width, height, top, right, left, bottom}
-        const obstacleRect = obstacle.element.getBoundingClientRect(); // --> {x, y, width, height, top, right, left, bottom}
+        const playerRect = this.element.getBoundingClientRect(); 
+        const obstacleRect = obstacle.element.getBoundingClientRect();
 
         if (
             playerRect.left < obstacleRect.right &&
@@ -170,7 +170,6 @@ class Obstacle {
     }
 
     updatePosition() {
-        // Update the obstacle's position based on the properties left and top
         this.element.style.left = `${this.left}px`;
         this.element.style.top = `${this.top}px`;
     }
